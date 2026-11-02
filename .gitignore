@@ -1,2 +1,3 @@
 # please ignore the DB backup files.
 fedbids_db_backup.sql
+statebids_db_backup.sql
