@@ -1,0 +1,94 @@
+.collapsible {
+  background-color: #1f2456;
+  color: white;
+  cursor: pointer;
+  /*padding: 18px;
+  width: 180px;*/
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/*.active, .collapsible:hover {
+  background-color: #555;
+}*/
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  /*background-color: #f1f1f1;*/
+}
+
+
+#nav {
+  list-style: none inside;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#nav li {
+  display: block;
+  position: relative;
+  float: left;
+
+  /* menu background color */
+}
+
+#nav li li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1f2457;
+  /* menu background color */
+}
+
+#nav li li a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  width: 180px;
+  line-height: 35px;
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+#nav li li a {
+  font-size: 90%;
+}
+
+
+/* smaller font size for sub menu items */
+
+#nav li li:hover {
+  background: #003f20;
+}
+
+
+#nav ul {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  display: none;
+  /* hides sublists */
+}
+
+#nav li:hover ul ul {
+  display: none;
+}
+
+/* hides sub-sublists */
+#nav li:hover ul {
+  display: block;
+}
+
+/* shows sublist on hover */
+#nav li li:hover ul {
+  display: block;
+  /* shows sub-sublist on hover */
+  margin-left: 200px;
+  margin-top: -35px;
+  }
+

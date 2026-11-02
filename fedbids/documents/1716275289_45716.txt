@@ -1,0 +1,197 @@
+UPDATE `timesheet` SET `uname`= 'A0209' WHERE `uname`= ''
+
+addrole_add_opportunities.php
+ ajax_opportunities_add_admin.php
+  opp_db_addnew_admin.php
+  addrole_incumbents.php
+  ajax_incumbent_update_admin.php
+  incumbent_db_addnew_admin.php
+incumbent_db_update_admin.php
+
+addrole_update_opportunities.php
+ajax_opportunities_update_admin.php
+opp_db_update2.php
+save_note_to_db.php
+save_submission_to_db.php
+upload.php
+upload-document.php
+
+ajax_edit_incumbent_admin.php
+ajax_incumbent_update_admin.php
+
+
+includes/inline-styles.php
+executive.php
+proposals.php
+sales.php
+changepwd.php
+logout.php
+addrole_add_opportunity.php
+include("agenda_insert.php");
+include("includes/footer.php");
+
+ajax --
+ajax_opportunities_update.php
+ajax_contact_update.php
+ajax_incumbent_update.php
+ajax_description_update.php
+element_note.php
+ajax_add_note.php
+ajax_show_filters.php
+ajax_contact_update.php
+  ajax_oppdet_update.php
+  ajax_status_update.php
+  ajax_favbid_add.php
+ajax_status_update.php
+ajax_phase_update.php
+ajax_decision_update.php
+ajax_opportunities_add.php
+opportunity_details.php
+ajax_proposal_mods.php
+responsedocupload.php
+
+
+connect_portal123.php
+   variables.php
+ admin_left_menu.php
+ ajax_opportunities_admin.php
+    agenda.php
+ index.php
+ login.php
+ logout.php
+ left_content_include.php
+top_bar_include.php
+ menu_group.php
+ setnewpwd.php
+ ajax_status_update.php
+
+connect_portal123.php
+ admin_left_menu.php
+ ajax_opportunities_admin.php
+left_content_include.php
+setnewpwd.php
+
+Msr@2023
+Database: dbs12385104
+Host name
+db5014908202.hosting-data.io
+Port
+3306
+User name
+dbu559456
+
+with ssl
+Database: dbs12385113
+Host name
+db5014908246.hosting-data.io
+Port
+3306
+User name
+dbu2007728
+Type and version
+MariaDB 10.6
+
+
+Update issue - dropdown
+addrole_incumbents.php
+ajax_incumbent_update_admin.php -- contact no and ajax extra fields page
+incumbent_db_addnew_admin.php
+ajax_edit_incumbent_admin.php
+incumbent_db_update_admin.php
+
+agenda_insert.php -- agenda loading data from this file
+
+http://s343786261.onlinehome.us/bids-test/
+
+sent mail after onboard new emp
+
+https://hrportal.fintinc.in/add_user_email -- email generation
+
+agenda.php
+opportunity_details.php
+ajax_phase_update
+ajax_status_update
+
+orange hrm // Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+/orangehrm/src/plugins/orangehrmCorePlugin/templates -- title change
+/dist/favicon.ico
+/orangehrm/src/client/src/core/components/layout  --- right side logut
+
+TRUNCATE TABLE excel_test_notes;
+TRUNCATE TABLE history_log;
+TRUNCATE TABLE excel_test;
+TRUNCATE TABLE incumbents_test;
+TRUNCATE TABLE documents;
+
+ALTER TABLE incumbents_test
+MODIFY eligible_incumbent
+varchar(50);
+
+ALTER TABLE documents ADD renew_filename varchar(255);
+
+isfirst_loggedin
+https://github.com/orangehrm/orangehrm/issues/1746
+setnewpwd.php
+
+SSH login details:
+IP Address: 74.208.188.133
+Username: root
+Password: H%76*G*6#5&4LK9JL3I#H*&R
+ select opportunity_id,vehicle_one, vehicle_two, contract_vehicle, contract_vehicle_two,contractveh_table from excel_test limit 50;
+contract_vehicle_two,vehicle_two and contract_vehicle,vehicle_one
+Mysql server login details:
+Username: root  //  fedbidsuser
+Password: H@llo2023*  //  Ardent@123
+Database name: fedbidsbd
+
+ardentuser / Ardent@123
+
+ALTER TABLE history_log MODIFY history_timestamp datetime;
+ALTER TABLE history_log ALTER column history_timestamp set DEFAULT NULL;
+
+UPDATE excel_test SET decision='',decision_value='0',is_archived='NULL',`status`='Agenda Item', status_value='1' WHERE opportunity_id = '3675';
+UPDATE excel_test SET decision='Review',decision_value='6',is_archived='NULL',`status`='Under Review', status_value='7' WHERE opportunity_id = '3593';
+select decision,decision_value,status,status_value,is_archived from excel_test where status = 'Under Review' limit 10;
+
+hrmdb
+rajphp998877
+Account@123
+
+http://s343786261.onlinehome.us/invoiceportal-dev/
+superadmin / superadmin
+finthq / finthq
+
+D:\OneDrive - Fint solutions Pvt Ltd\Internal portal files\
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'183.82.4.107'
+    IDENTIFIED BY 'Ardent@123'  
+    WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+Usd id = 5369077259060426	                          
+Pwd = Bittu@2022	
+
+GRANT ALL PRIVILEGES ON wordprdb.* TO root@localhost;
+GRANT ALL ON *.* TO root@'101.188.67.134' IDENTIFIED BY 'Framedit2018*'; 9581865290 srivani nagar road no-8d
+
+Fint@2023
+Database: dbs12417395
+Host name
+db5014937802.hosting-data.io
+User name
+dbu1046875
+
+username: ardent2023
+pawd: Ardent@2023
+
+Step 1: Open the dump.sql file in any editor.
+Step 2: Find ‘utf8mb4_0900_ai_ci’ & replace it with ‘utf8mb4_unicode_ci’.
+Step 3: Save the file.
+
+
+superadmin
+Ardent@2023
+
+decision - decision_edit
+reson - reason
+button - submitbtn
+form id - proposalarea

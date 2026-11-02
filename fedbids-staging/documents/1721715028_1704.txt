@@ -1,0 +1,114 @@
+decision_id | decision_name | decision_show |
++-------------+---------------+---------------+
+|           1 | Bid           |             1 |
+|           2 | No Bid        |             1 |
+|           3 | Ineligible    |             1 |
+|           4 | Review        |             1 |
+|           5 | Cancelled     |             1 |
++-------------+---------------+---------------+
+
+mysql> SELECT * FROM decision_levels;
++-------------------+---------------------+---------------------+
+| decision_level_id | decision_level_name | decision_level_show |
++-------------------+---------------------+---------------------+
+|                 3 | Bid                 |                   1 |
+|                 4 | No Bid              |                   1 |
+|                 5 | Ineligible          |                   1 |
+|                 6 | Review              |                   1 |
+|                 7 | Cancelled           |                   1 |
+|                 0 | Undecided           |                   1 |
+|                 8 | All                 |                   1 |
+|                 8 | Any                 |                   1 |
+
+
+ opportunity_id | decision | decision_value | status   | status_value | is_archived |
++----------------+----------+----------------+----------+--------------+-------------+
+|           3492 | No Bid   |              4 | Archived |            6 | true        |
+|           3491 | No Bid   |              4 | Archived |            6 | true        |
+|           3490 | No Bid   |              4 | Archived |            6 | true        |
+|           3489 | No Bid   |              4 | Archived |            6 | true        |
+|           3488 | No Bid   |              4 | Archived |            6 | true        |
+|           3486 | No Bid   |              4 | Archived |            6 | true        |
+|           3485 | No Bid   |              4 | Archived |            6 | true        |
+|           3484 | No Bid   |              4 | Archived |            6 | true        |
+|           3479 | No Bid   |              4 | Archived |            6 | true        |
+|           3478 | No Bid   |              4 | Archived |            6 | true        |
+
+
+opportunity_id | decision | decision_value | status   | status_value | is_archived | proposal_due        |
++----------------+----------+----------------+----------+--------------+-------------+---------------------+
+|           3492 | No Bid   |              4 | Archived |            6 | true        | 2024-01-05 15:00:00 |
+|           3491 | No Bid   |              4 | Archived |            6 | true        | 2024-01-03 12:00:00 |
+|           3490 | No Bid   |              4 | Archived |            6 | true        | 2024-01-05 17:00:00 |
+|           3489 | No Bid   |              4 | Archived |            6 | true        | 2024-01-02 17:00:00 |
+|           3488 | No Bid   |              4 | Archived |            6 | true        | 2024-01-11 17:00:00 |
+|           3486 | No Bid   |              4 | Archived |            6 | true        | 2024-01-12 13:00:00 |
+|           3485 | No Bid   |              4 | Archived |            6 | true        | 2024-01-05 17:00:00 |
+|           3484 | No Bid   |              4 | Archived |            6 | true        | 2024-01-12 12:00:00 |
+|           3479 | No Bid   |              4 | Archived |            6 | true        | 2024-01-03 17:00:00 |
+|           3478 | No Bid   |              4 | Archived |            6 | true        | 2024-01-04 05:00:00 |
+
+
+ opportunity_id | decision | decision_value | status   | status_value | is_archived | proposal_due        | contract_vehicle |
++----------------+----------+----------------+----------+--------------+-------------+---------------------+------------------+
+|           3492 | No Bid   |              4 | Archived |            6 | true        | 2024-01-05 15:00:00 | STARS III        |
+|           3491 | No Bid   |              4 | Archived |            6 | true        | 2024-01-03 12:00:00 | OASIS SB         |
+|           3490 | No Bid   |              4 | Archived |            6 | true        | 2024-01-05 17:00:00 | OASIS 8(a)       |
+|           3489 | No Bid   |              4 | Archived |            6 | true        | 2024-01-02 17:00:00 | OASIS 8(a)       |
+|           3488 | No Bid   |              4 | Archived |            6 | true        | 2024-01-11 17:00:00 | OASIS 8(a)       |
+|           3486 | No Bid   |              4 | Archived |            6 | true        | 2024-01-12 13:00:00 | STARS III        |
+|           3485 | No Bid   |              4 | Archived |            6 | true        | 2024-01-05 17:00:00 | STARS III        |
+|           3484 | No Bid   |              4 | Archived |            6 | true        | 2024-01-12 12:00:00 | STARS III        |
+|           3479 | No Bid   |              4 | Archived |            6 | true        | 2024-01-03 17:00:00 | GSA MAS Schedule |
+|           3478 | No Bid   |              4 | Archived |            6 | true        | 2024-01-04 05:00:00 | OASIS 8(a)       |
+
+
+ opportunity_id | decision | decision_value | proposal_due        | contract_vehicle |
++----------------+----------+----------------+---------------------+------------------+
+|           3492 | No Bid   |              4 | 2024-01-05 15:00:00 | STARS III        |
+|           3491 | No Bid   |              4 | 2024-01-03 12:00:00 | OASIS SB         |
+|           3490 | No Bid   |              4 | 2024-01-05 17:00:00 | OASIS 8(a)       |
+|           3489 | No Bid   |              4 | 2024-01-02 17:00:00 | OASIS 8(a)       |
+|           3488 | No Bid   |              4 | 2024-01-11 17:00:00 | OASIS 8(a)       |
+|           3486 | No Bid   |              4 | 2024-01-12 13:00:00 | STARS III        |
+|           3485 | No Bid   |              4 | 2024-01-05 17:00:00 | STARS III        |
+|           3484 | No Bid   |              4 | 2024-01-12 12:00:00 | STARS III        |
+|           3479 | No Bid   |              4 | 2024-01-03 17:00:00 | GSA MAS Schedule |
+|           3478 | No Bid   |              4 | 2024-01-04 05:00:00 | OASIS 8(a)       |
++----------------+----------+----------------+---------------------+------------------+
+10 rows in set (0.00 sec)
+
+opportunity_id | decision   | decision_value | proposal_due        | contract_vehicle |
++----------------+------------+----------------+---------------------+------------------+
+|           3473 | Ineligible |              5 | 2024-01-12 16:00:00 | OASIS 8(a)       |
+|           3359 | Ineligible |              5 | 2023-10-16 12:00:00 | STARS III        |
+|           3340 | Ineligible |              5 | 2023-11-08 16:00:00 | OASIS SB         |
+|           3330 | Ineligible |              5 | 2023-10-23 09:00:00 | OASIS SB         |
+|           3308 | Ineligible |              5 | 2023-10-20 17:00:00 | STARS III        |
+|           3305 | Ineligible |              5 | 2023-11-01          | STARS III        |
+|           3277 | Ineligible |              5 | 2023-11-24 17:00:00 | STARS III        |
+|           3274 | Ineligible |              5 | 2023-11-10 17:00:00 | STARS III        |
+|           3273 | Ineligible |              5 | 2023-11-09 17:00:00 | STARS III        |
+|           3262 | Ineligible |              5 | 2023-11-09 17:00:00 | STARS III        |
+
+opportunity_id | decision  | decision_value | proposal_due        | contract_vehicle |
++----------------+-----------+----------------+---------------------+------------------+
+|           3450 | Cancelled |              7 | 2023-12-13 17:00:00 | NULL             |
+|           3449 | Cancelled |              7 | 2023-12-13 17:00:00 | NULL             |
+|           2822 | Cancelled |              7 | NULL                | STARS III        |
+|           2794 | Cancelled |              7 | NULL                | STARS III        |
+|           2747 | Cancelled |              7 | NULL                | STARS III        |
+|           2746 | Cancelled |              7 | NULL                | STARS III        |
+|           2729 | Cancelled |              7 | NULL                | STARS III        |
+|           2724 | Cancelled |              7 | NULL                | STARS III        |
+|           2720 | Cancelled |              7 | NULL                | STARS III        |
+|           2717 | Cancelled |              7 | NULL                | STARS III        |
++----------------+-----------+----------------+---------------------+------------------+
+10 rows in set (0.00 sec)
+
+
+SELECT opportunity_id, title, due, released, proposal, vehicle_one, vehicle_two, contract_vehicle, status, agency, facility, clearance_level, proposal_due, qa_due, contract_vehicle_two, contract_pop2, status_value, entered_in_by, creation_timestamp, award_date, rfp_date, est_pop_start_date FROM excel_test WHERE opportunity_id>0 AND status_value>-1 AND (DATE(proposal_due) BETWEEN '2024-01-04' AND '2024-05-12') AND (contract_vehicle LIKE '%STARS III%') AND (decision='No Bid') ORDER BY contract_vehicle, status_value, creation_timestamp ASC LIMIT 20;
+
+SELECT opportunity_id, bidopp, response, requestor, title, due, released, pop, synopsis, proposal, pricing, recruiting, gaps, decision, contract_pop, contract_period, vehicle_one, vehicle_two, contract_vehicle, status, agency, facility, clearance_level, proposal_due, qa_due, reason, manager, qa_timezone, proposal_timezone, contract_vehicle_two, contract_pop2, status_value, entered_in_by, creation_timestamp, transition_notes, award_date, rfp_date, est_pop_start_date, contractveh_table FROM excel_test WHERE opportunity_id>0 AND status_value>-1 AND (contract_vehicle LIKE '%SAM%') AND (decision='No Bid') AND (proposal_due BETWEEN '2024-03-05' AND '2024-04-05') ORDER BY contract_vehicle, status_value, creation_timestamp ASC LIMIT 20;
+
+DATE(order_datetime) BETWEEN '2004-10-01' AND '2004-10-03'
