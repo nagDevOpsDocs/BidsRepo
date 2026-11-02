@@ -644,7 +644,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_NUM))
 	else
 	{ $qa_due_date = ""; }
 	
-	$reason = $row[25];
+	$reason = html_entity_decode($row[25]);
 	$manager = "<option hidden selected value='" . $row[26] . "'>" . $row[26] . "</option>";
 	$opp_manager = $row[26];
 
